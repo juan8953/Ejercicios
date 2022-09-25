@@ -1,0 +1,7 @@
+#Realice un codigo usando la funcion random para generar 100 numeros aleatorios, los cuales realice la suma de los pares y de los impares
+#al realizar la suma de estos, compararlos y que arroje el mayor valor y que imprima ("La sumatoria de los (pares/impares) es mayor")
+#TODO realice el codigo en la siguiente funcion
+def sum_parimp (sum):
+
+
+return ("La sumatoria de los (pares/impares) es mayor, sum")
