@@ -1,0 +1,16 @@
+#Defina una funcion que haga el calculo del salario de un vendedor teniendo en cuentas las siguientes condiciones
+#1. Que el vendedor ingrese su salario y el valor total de las ventas que realizo
+#2. Si las ventas que realizo son menores a 500000 no gana comision alguna, si son iguales o mayores a 500000 y
+#menores a 2000000 se le sume el 5% de las ventas realizadas, y si son mayores a 2000000 se le aumente al salario el 10% del total de las ventas
+#TODO use la siguiente funcion para realizar el codigo
+salariob=int(input("Ingrese su salario base"))
+ventas=int(input("Ingrese el total de ventas"))
+def salario_tot(salariob,ventas):
+    if ventas<500000:
+        elsalariototal=ventas+salariob
+    elif ventas>=500000 and ventas<2000000:
+        elsalariototal=(ventas*0.05)+salariob
+    elif ventas>=2000000:
+        elsalariototal=(ventas*0.1)+salariob
+    return print("su salario total es de:",elsalariototal,"$")
+print(salario_tot(salariob,ventas))
