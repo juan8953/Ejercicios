@@ -1,0 +1,14 @@
+from matplotlib import pyplot
+def f1(x):
+    return 15*(x**2) - 23*x +14
+def f2(x):
+    return 35*x - 14.
+x = range(-20,20)
+pyplot.plot(x,[f1(i) for i in x])
+pyplot.plot(x,[f2(i) for i in x])
+pyplot.axhline(0, color="red")
+pyplot.axvline(0, color="red")
+pyplot.xlim(-20, 20)
+pyplot.ylim(-20, 20)
+pyplot.savefig("output.png")
+pyplot.show()
